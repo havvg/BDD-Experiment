@@ -57,3 +57,15 @@
     git=http://github.com/symfony/AsseticBundle.git
     target=/bundles/Symfony/Bundle/AsseticBundle
     version=v1.0.0
+
+[gherkin]
+    git=https://github.com/Behat/Gherkin.git
+    target=/behat/gherkin
+
+[behat]
+    git=https://github.com/Behat/Behat.git
+    target=/behat/behat
+
+[BehatBundle]
+    git=https://github.com/Behat/BehatBundle.git
+    target=/bundles/Behat/BehatBundle
