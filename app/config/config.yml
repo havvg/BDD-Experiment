@@ -38,7 +38,7 @@ doctrine:
         driver:   %database_driver%
         host:     %database_host%
         port:     %database_port%
-        dbname:   %database_name%
+        dbname:   %database_name%_%kernel.environment%
         user:     %database_user%
         password: %database_password%
         charset:  UTF8

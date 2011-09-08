@@ -1,0 +1,16 @@
+Acme\DemoBundle\Entity\Product:
+    type: entity
+    table: products
+    id:
+        id:
+            type: integer
+            generator: { strategy: AUTO }
+    manyToMany:
+        categories:
+            targetEntity: Category
+            mappedBy: products
+    fields:
+        name:
+            type: string
+            length: 100
+            unique: true
