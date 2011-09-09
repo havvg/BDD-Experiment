@@ -1,0 +1,14 @@
+{% extends "AcmeDemoBundle::layout.html.twig" %}
+
+{% block title "Catalog - Category List" %}
+
+{% block content_header '' %}
+
+{% block content %}
+    <h1>Category List</h1>
+    <ul id="category-list">
+    {% for category in categories %}
+        <li><a href="{{ path('_catalog_category_content', {'name': category.name}) }}">{{ category.name }}</a></li>
+    {% endfor %}
+    </ul>
+{% endblock %}

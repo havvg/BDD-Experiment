@@ -1,0 +1,14 @@
+{% extends "AcmeDemoBundle::layout.html.twig" %}
+
+{% block title "Catalog - Product List" %}
+
+{% block content_header '' %}
+
+{% block content %}
+    <h1>Product List</h1>
+    <ul id="product-list">
+    {% for product in products %}
+        <li>{{ product.name }}</li>
+    {% endfor %}
+    </ul>
+{% endblock %}
