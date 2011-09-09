@@ -12,3 +12,6 @@ web_profiler:
 
 swiftmailer:
     disable_delivery: true
+
+mink:
+    base_url:   http://your-app.dev/app_test.php

@@ -28,6 +28,7 @@ class AppKernel extends Kernel
 
         if ('test' === $this->getEnvironment()) {
             $bundles[] = new Behat\BehatBundle\BehatBundle();
+            $bundles[] = new Behat\MinkBundle\MinkBundle();
         }
 
         return $bundles;
