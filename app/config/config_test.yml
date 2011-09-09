@@ -15,3 +15,5 @@ swiftmailer:
 
 mink:
     base_url:   http://your-app.dev/app_test.php
+    default_session: symfony
+    zombie: ~
